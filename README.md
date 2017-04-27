@@ -1,2 +1,1 @@
 # javascript-popup
-learning purpose
