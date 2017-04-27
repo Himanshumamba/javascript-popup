@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>popup</title>	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+ <div class="container">
+
+ 	<div id="popupbackground">
+ 	<div class="popit" id ="popit">
+ 		<h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+ 		<p>This is where you can prompt your audience to sign up to your mailing list. You could offer a freebie or incentive.</p>
+ 		<input type ="text" placeholder="Name">
+ 		<input type ="text" placeholder="Email">
+ 		<button class="Signme" type="submit" value ="submit">SIGN ME UP</button>
+ 	</div>
+</div>
+</div>
+
+<a href ="javscript:void(0)" id ="show"onClick="showit();">click it</a> 
+
+
+<script type="text/javascript">
+function showit(){	
+
+
+var  key = document.getElementById("show");
+var  popupmodal= document.getElementById("popupbackground");
+
+key.onclick=function(event )
+{
+	
+    popupmodal.style.display = "block";
+	popit.style.display= "block";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+
+
