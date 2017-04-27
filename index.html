@@ -11,6 +11,8 @@
 
  	<div id="popupbackground">
  	<div class="popit" id ="popit">
+ 		 		<span class="close">×</span>
+
  		<h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
  		<p>This is where you can prompt your audience to sign up to your mailing list. You could offer a freebie or incentive. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -34,6 +36,8 @@ function showit(){
 
 var  key = document.getElementById("show");
 var  popupmodal= document.getElementById("popupbackground");
+var span = document.getElementsByClassName("close")[0];
+
 
 key.onclick=function(event )
 {
@@ -42,10 +46,22 @@ key.onclick=function(event )
 	popit.style.display= "block";
 
 }
+span.onclick = function() {
+    span.style.display = "none";
+    popit.style.display= "none";
+    popupmodal.style.display = "none";
 
 
+}
+window.onclick = function(event) {
+    if (event.target == show && event.target== popupbackground) {
+        popupmodal.style.display = "none";
+        	popit.style.display= "none";
+
+    }
 
 
+}
 }
 
 </script>
